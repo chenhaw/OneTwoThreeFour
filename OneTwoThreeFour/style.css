@@ -1,0 +1,598 @@
+/*
+Theme Name: OneTwoThreeFour
+Author: Lai Chen Haw
+Author URI: http://chenhaw.net/
+Description:  This theme is develop for Institute of Postgraduate Studies.
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: orange, multi-columns
+*/
+
+@charset "utf-8";
+@import url('./blueprint/screen.css');
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 960px;
+}
+
+/* `Container
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+  display: inline;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12,
+.push_13, .pull_13,
+.push_14, .pull_14,
+.push_15, .pull_15,
+.push_16, .pull_16,
+.push_17, .pull_17,
+.push_18, .pull_18,
+.push_19, .pull_19,
+.push_20, .pull_20,
+.push_21, .pull_21,
+.push_22, .pull_22,
+.push_23, .pull_23 {
+  position: relative;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* `Grid >> 24 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_24 .grid_1 {
+  width: 30px;
+}
+
+.container_24 .grid_2 {
+  width: 70px;
+}
+
+.container_24 .grid_3 {
+  width: 110px;
+}
+
+.container_24 .grid_4 {
+  width: 150px;
+}
+
+.container_24 .grid_5 {
+  width: 190px;
+}
+
+.container_24 .grid_6 {
+  width: 230px;
+}
+
+.container_24 .grid_7 {
+  width: 270px;
+}
+
+.container_24 .grid_8 {
+  width: 310px;
+}
+
+.container_24 .grid_9 {
+  width: 350px;
+}
+
+.container_24 .grid_10 {
+  width: 390px;
+}
+
+.container_24 .grid_11 {
+  width: 430px;
+}
+
+.container_24 .grid_12 {
+  width: 470px;
+}
+
+.container_24 .grid_13 {
+  width: 510px;
+}
+
+.container_24 .grid_14 {
+  width: 550px;
+}
+
+.container_24 .grid_15 {
+  width: 590px;
+}
+
+.container_24 .grid_16 {
+  width: 630px;
+}
+
+.container_24 .grid_17 {
+  width: 670px;
+}
+
+.container_24 .grid_18 {
+  width: 710px;
+}
+
+.container_24 .grid_19 {
+  width: 750px;
+}
+
+.container_24 .grid_20 {
+  width: 790px;
+}
+
+.container_24 .grid_21 {
+  width: 830px;
+}
+
+.container_24 .grid_22 {
+  width: 870px;
+}
+
+.container_24 .grid_23 {
+  width: 910px;
+}
+
+.container_24 .grid_24 {
+  width: 950px;
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_24:before,
+.container_24:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_24:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_24 {
+  zoom: 1;
+}
+/** DECLARATION FOR ALL THE ELEMENTS*/
+/**html,body,* {
+border:0;
+margin:0;
+padding:0;
+}*/
+
+body {
+color:#404040;
+background-color:#f4f4f4;
+}
+
+a {
+text-decoration:none;
+color:#125687;
+}
+
+ul, ol {
+list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #CE1126;
+	font-weight: bold;
+}
+
+/** END OF DECLARATION FOR ALL ELEMENTS*/
+
+#wrapper {
+	background-color: #FFF;
+}
+
+#head {
+color:#fff;
+position:relative;
+background-repeat:no-repeat;
+background:url('images/mainHeader.jpg') no-repeat;
+height: 186px;
+margin-bottom: 10px;
+}
+
+#banner {
+color:#fff;
+position:relative;
+background-repeat:no-repeat;
+background:url('images/banner.jpg') no-repeat;
+height: 78px;
+}
+
+#head a {
+color:#fff;
+}
+
+/** BEGIN STYLING FOR CONTENT **/
+
+#content {
+padding: 10px;
+border: 1px solid #da7c0c;
+font-size: 14px;
+}
+
+#content p {
+text-align: justify;
+}
+
+#content ol {
+	list-style-type: decimal;
+	margin-left: 30px;
+}
+
+#content ul {
+	list-style-type: disc;
+	margin-left: 30px;
+}
+
+#content img {
+border: 0 none;
+}
+
+#content img {
+border:1px solid #d6d6d6;
+}
+
+#content img.alignleft {
+	display: block;
+	float: left;
+	margin: 10px 0;
+}
+#content img.aligncenter {
+	display: block;
+	margin: 10px auto;
+}
+
+#content img.alignright {
+	display: block;
+	float: right;
+	margin: 10px 0;
+}
+
+#content h2 a {
+color:#ce1126;
+text-decoration:none;
+}
+
+#content h3, #content h3 a {
+	color: #FF9900;
+
+}
+
+#content h4, #content h5, #content h6 {
+	color: #000;
+}
+
+/** END OF STYLING FOR CONTENT **/
+
+/** BEGIN STYLING FOR SIDEBAR **/
+#quickinfo, #announcement {
+	padding: 10px;
+	border: 1px solid #da7c0c;
+	height: 320px;
+}
+
+#quickinfo {
+	overflow: hidden;
+}
+
+#quickinfo li {
+	font-size: 14px;
+}
+	
+#announcement table{
+	font-size: 12px;
+}
+
+#announcement {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#announcement .more {
+	font-size: 12px;
+	text-align: right;
+}
+
+/** BEGIN STYLING FOR SIDEBAR **/
+
+#sidebar {
+	padding: 10px;
+	border: 1px solid #da7c0c;
+}
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+#sidebar li {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+#sidebar ul li {
+line-height:1em;
+margin: 10px;
+padding: 0 10px;
+}
+
+/** END OF STYLING FOR SIDEBAR **/
+
+/** STYLING FOR THE FOUR COLUMNS **/
+
+.four {
+	padding: 10px;
+	height: 320px;
+	border: 1px solid #da7c0c;
+	overflow: hidden;
+}
+
+.four ul {
+	list-style-type: disc;
+}
+
+.four li, .four p {
+font-size: 12px;
+margin-left: 15px;
+}
+.four img {
+display: block;
+margin: 0 auto;
+}
+
+.four li a:hover {
+	text-decoration: underline;
+}
+
+/** END OF STYLING FOR THE FOUR COLUMNS **/
+
+/** BEGIN STYLING FOR THE THE THREE COLUMNS **/
+
+.three {
+	padding: 10px;
+	height: 240px;
+	border: 1px solid #da7c0c;
+	overflow: hidden;
+}
+
+.three h4 {
+	margin-bottom: 5px;
+}
+
+.three p {
+	margin-bottom: 5px;
+}
+
+/** END OF STYLING FOR THE THREE COLUMNS **/
+
+#footer {
+height:70px;
+margin:10px 5px;
+padding-top:10px;
+background:url('images/footer.jpg') no-repeat 50% top;
+}
+
+#footer p {
+text-align:center;
+color:#FFF;
+}
+
+#footer a {
+color:#AFD8E8;
+}
+
+/** BEGIN STYLING FOR TABLE **/
+table {
+width: 100%;
+border-spacing: 0;
+border: 1px solid #da7c0c;
+margin-bottom: 1.5em;
+}
+
+table caption {
+	font-weight: bold;
+}
+
+thead th, tbody td {
+padding: 5px;
+border: 1px solid #da7c0c;
+}
+
+.date {
+width: 20%;
+}
+
+tbody tr:nth-child(2n) td, tbody tr.even td, thead th.even, thead th {
+background: none repeat scroll 0 0 #FF9900;
+}
+
+/** END OF STYLING FOR TABLE **/
+
+/** CSS FOR THE DROP DOWN MENU **/
+#navigation {
+	width: 938px;
+display: block;
+clear: both;
+float: left;
+	padding: 5px;
+	margin: 10px 0;
+	font-size: 14px;
+	color: #fef4e9;
+	border: solid 1px #da7c0c;
+	background: #f78d1d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#navigation ul {
+ margin: 0;
+ padding: 0;
+}
+
+#navigation li {
+ float: left;
+ line-height: 1.5em;
+ margin: 0;
+ padding: 0 10px;
+ border-right: solid 1px #da7c0c;
+}
+
+#navigation a {
+	width: 100%;
+	display: block;
+	color: #FFFFFF;
+}
+
+#navigation ul ul {
+	margin: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	list-style: none;
+	z-index: 99999;
+}
+
+#navigation ul li:last-child {
+	border-right: none;
+}
+
+#navigation ul li.hover,
+#navigation ul li:hover {
+ position: relative;
+ z-index: 99999;
+ cursor: default;
+}
+
+#navigation ul ul li {
+ float: none;
+ padding: 0;
+ width: 220px;
+ margin-left: 0;
+ padding: 10px;
+ line-height: 1em;
+font-size: 12px;
+border: none;
+background: #f78d1d;
+background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}
+
+#navigation ul ul ul {
+ top: 1px;
+ left: 99%;
+}
+
+#navigation ul li:hover > ul {
+ visibility: visible;
+}
+
+#navigation li a:hover {
+	text-decoration: underline;
+}
